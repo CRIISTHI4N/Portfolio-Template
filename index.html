@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nombre Apellido | Portafolio</title>
+    <link rel="icon" href="#" /> <!-- colocar icono -->
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles/mystyles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- pre-load de imagenes -->
+    <!-- has un pre-load de las imagenes mas pesadas -->
+    <link rel="preload" href="./img/autorenting.jpg" as="image">
+    <link rel="preload" href="./img/brigada.jpg" as="image">
+    <link rel="preload" href="./img/itquentame.jpeg" as="image">
+</head>
+
+<body class="wellcome w--opacity">
+
+    <!-- barra de anvegación -->
+    <nav class="w-100 position-fixed">
+        <div class="contenedor__principal nav white-color d-flex justify-content-between px-4 py-3 m-auto">
+            <div class="nav__name">
+                <span class="fs-6 fw-bold text-white">Nombre <span class="text-warning">Apellido</span></span>
+            </div>
+
+            <div class="nav_icon">
+                <i class="nav_enlace_icon fs-4 d-lg-none fa-solid fa-bars text-white"></i>
+            </div>
+
+            <div class="nav__enlaces d-flex flex-column flex-lg-row text-light">
+                <a class="nav__enlace text-light text-decoration-none me-md-5" href="#inicio">Inicio</a>
+                <a class="nav__enlace text-light text-decoration-none me-md-5" href="#acercade">Acerca de mi</a>
+                <a class="nav__enlace text-light text-decoration-none me-md-5" href="#habilidades">Habilidades</a>
+                <a class="nav__enlace text-light text-decoration-none me-md-5" href="#experiencia">Experiencia</a>
+                <a class="nav__enlace text-light text-decoration-none" href="#contacto">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- vista principal (inicio) -->
+    <section id="inicio" class="section container-fluid bg-dark d-block">
+        <div class="section__flex d-flex flex-column justify-content-center align-items-center">
+            <span class="text-white d-block text-center fw-bold fs-5">Hola, <span
+                    class="text-warning fw-normal">Soy</span></span>
+            <span class="text-warning d-block text-center fw-bold fs-1">Nombre Apellido</span>
+            <span class="text-white d-block text-center fw-bold fs-5">Especialidad</span>
+            <span class="text-white d-block text-center fw-bold fs-5">&lt;/&gt;</span>
+
+            <div class="section__links pt-4 w-100 d-flex justify-content-center">
+                <a class="me-3 text-decoration-none text-white fs-1" href="#" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-github icon_social"></i>
+                </a>
+                <a class="text-decoration-none text-white fs-1" href="#" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-linkedin icon_social"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- acerca de -->
+    <section class="acercade container-fluid" id="acercade">
+        <div class="contenedor__principal m-auto  text-white px-3">
+
+            <div class="row">
+                <div class="col-lg">
+                    <h2 class="text-center text-lg-start fw-bold my-5">Acerca de mi</h2>
+
+                    <p class="text-center text-lg-start">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, velit quae? Autem odit tempore
+                        voluptates exercitationem tenetur quo. Harum et, similique cum incidunt est aliquam distinctio
+                        illo vel officiis eligendi!
+                    </p>
+                    <p class="text-center text-lg-start">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, velit quae? Autem odit tempore
+                        voluptates exercitationem tenetur quo. Harum et, similique cum incidunt est aliquam distinctio
+                        illo vel officiis eligendi!
+                    </p>
+                    <p class="text-center text-lg-start">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, velit quae? Autem odit tempore
+                        voluptates exercitationem tenetur quo. Harum et, similique cum incidunt est aliquam distinctio
+                        illo vel officiis eligendi!
+                    </p>
+                    <a id="asd" class="contacto btn btn-warning d-block m-auto my-lg-5 mx-lg-0"
+                        href="#contacto">Contactame</a>
+
+                </div>
+                <div class="col-lg">
+                    <img class="img__perfil me d-block w-75 m-auto rounded-circle py-5" src="" alt="imagen de perfil">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- habilidades -->
+    <section id="habilidades" class="habilidades container-fluid">
+        <div class="contenedor__principal m-auto text-white px-3">
+            <div class="row">
+                <div class="d-lg-flex justify-content-lg-center align-items-lg-center">
+                    <div class="col-lg">
+                        <h2 class="text-center text-lg-start fw-bold my-5">Habilidades</h2>
+
+                        <p class="text-center text-lg-start">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos expedita optio
+                            voluptates maiores quas consectetur laboriosam. Aspernatur perferendis adipisci
+                        </p>
+
+                        <a class="proyectos btn btn-warning d-block m-auto my-lg-5 mx-lg-0"
+                            href="#experiencia">Proyectos</a>
+                    </div>
+                    <div class="col-lg my-5">
+                        <div class="d-flex justify-content-center px-4">
+                            <ul class="me-5">
+                                <li>Tecnología</li>
+                                <li>Tecnología</li>
+                                <li>Tecnología</li>
+                                <li>Tecnología</li>
+                            </ul>
+
+                            <ul>
+                                <li>Tecnología</li>
+                                <li>Tecnología</li>
+                                <li>Tecnología</li>
+                                <li>Tecnología</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- experiencia -->
+    <section id="experiencia" class="experiencia container-fluid mb-5">
+        <div class="contenedor__principal m-auto text-white px-3">
+
+            <div class="row">
+                <div class="col">
+                    <h2 class=" text-center fw-bold my-5">Experiencia</h2>
+                </div>
+            </div>
+
+            <div class="row row-cols-md-2 row-cols-xl-3">
+                <div class="col-md p-2">
+                    <article class="article__experiencia">
+                        <div class="imagen_referencia">
+                            <img class="w-100 rounded-2" src="img/brigada.jpg" alt="experiencia ITQuentame & Brigada">
+                        </div>
+
+                        <div class="spinner">
+                            <div class="double-bounce1"></div>
+                            <div class="double-bounce2"></div>
+                        </div>
+
+                        <span class="m-0 fw-bold">Lorem ipsum dolor sit amet consectetur.</span>
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#brigada"
+                            class="btn btn-warning">Ver más</button>
+                    </article>
+                </div>
+
+                <div class="col-md p-2">
+                    <article class="article__experiencia">
+                        <div class="imagen_referencia">
+                            <img class="w-100 rounded-2" src="img/autorenting.jpg" alt="experiencia auto renting hca">
+                        </div>
+
+                        <div class="spinner">
+                            <div class="double-bounce1"></div>
+                            <div class="double-bounce2"></div>
+                        </div>
+
+                        <span class="m-0 fw-bold">Lorem ipsum dolor sit amet.</span>
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#autorenting"
+                            class="btn btn-warning">Ver más</button>
+                    </article>
+                </div>
+
+                <!-- EN CASO DE QUERE AGREGAR OTRA EXPERIENCIA -->
+                <!-- <div class="col-md p-2">
+                    <article class="article__experiencia">
+                        <div class="imagen_referencia">
+                            <img class="w-100 rounded-2" src="#" alt="texto alternativo">
+                        </div>
+
+                        <div class="spinner">
+                            <div class="double-bounce1"></div>
+                            <div class="double-bounce2"></div>
+                        </div>
+
+                        <span class="m-0 fw-bold">Lorem ipsum dolor sit amet.</span>
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#idexperiencia"
+                            class="btn btn-warning">Ver más</button>
+                    </article>
+                </div> -->
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- svg waves -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#1f1f1f" fill-opacity="1"
+            d="M0,96L120,122.7C240,149,480,203,720,218.7C960,235,1200,213,1320,202.7L1440,192L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z">
+        </path>
+    </svg>
+
+
+    <!-- footer -->
+    <footer class="text-white footer container-fluid" id="contacto">
+        <div class="contenedor__principal m-auto px-3">
+            <div class="row">
+                <div class="d-flex flex-column flex-md-row justify-content-sm-between align-items-sm-center">
+                    <div class="footer__name pb-5">
+                        <span class="d-block fs-4 fw-bold text-center text-md-start">Nombre <span
+                                class="text-warning">Apellido</span></span>
+                        <span class="text-white d-block text-center text-md-start fs-6">Especialidad</span>
+                    </div>
+
+                    <div class="pb-5">
+                        <span class="d-block text-center text-md-start">
+                            <i class="fa-solid fa-phone me-2"></i>
+                            000 000 0000</span>
+                        <span class="d-block text-center text-md-start">
+                            <i class="fa-solid fa-envelope me-2"></i>
+                            example@gmail.com</span>
+                    </div>
+
+                    <div class="text-center pb-5">
+                        <a class="me-3 text-decoration-none text-white" href="#" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="fa-brands fa-github fs-3"></i>
+                        </a>
+                        <a class="me-3 text-decoration-none text-white" href="#" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="fa-brands fa-linkedin fs-3"></i>
+                        </a>
+                        <a class="text-decoration-none text-white" href="./files/cv.pdf"
+                            onclick="return confirm('¿Desea descargar el CV?')" target="_blank"
+                            rel="noopener noreferrer" download>
+                            <i class="fa-solid fa-sheet-plastic fs-3"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+    </footer>
+
+
+    <!-- Ventanas modal -->
+    <!-- ITQ modal-->
+    <div class="modal fade" id="brigada" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-scrollable">
+            <div class="modal-content modal__content--border">
+                <div class="modal-header modal__header--bg text-white">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Lorem ipsum dolor sit amet consectetur.</h1>
+                </div>
+                <div class="modal-body modal__body--bg">
+                    <h6 class="d-block fw-bold">Funcionalidad:</h6>
+                    <br>
+
+                    <p>
+                        Lorem <strong>ipsum</strong> dolor sit amet consectetur adipisicing elit. Cupiditate, voluptate
+                        vel voluptatum quos accusantium libero quidem qui veniam ipsa nesciunt ut modi nulla, voluptas
+                        voluptatibus, nobis repellendus pariatur repudiandae vitae!
+                    </p>
+                    <p>
+                        Lorem <strong>ipsum</strong> dolor sit amet consectetur adipisicing elit. Cupiditate, voluptate
+                        vel voluptatum quos accusantium libero quidem qui veniam ipsa nesciunt ut modi nulla, voluptas
+                        voluptatibus, nobis repellendus pariatur repudiandae vitae!
+                    </p>
+
+                    <div class="d-flex flex-column flex-lg-row justify-content-between gap-3">
+                        <div class="w-100">
+                            <img src="./img/itquentame.jpeg" alt="ITQuentame" class="w-100 rounded-3">
+                            <a class="btn btn-warning mt-3" href="#" target="_blank" rel='noopener noreferrer'>
+                                Visitar
+                            </a>
+                        </div>
+                        <div class="w-100">
+                            <img src="./img/brigada.jpeg" alt="Brigada" class="w-100 rounded-3">
+                            <span>Sin enlace ya que requiere de usuario y contraseña</span>
+                        </div>
+                    </div>
+
+                    <br>
+                    <span class="d-block fw-bold">Tecnologías utilizadas:</span>
+                    <ul>
+                        <li>Tecnología</li>
+                        <li>Tecnología</li>
+                        <li>Tecnología</li>
+                        <li>Tecnología</li>
+                    </ul>
+
+                    <br>
+                    <span class="d-block fw-bold">Tareas realizadas:</span>
+                    <ul>
+                        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima temporibus placeat
+                            blanditiis in facilis! Odit recusandae velit iste amet.
+                        </li>
+                        <li>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima temporibus placeat
+                            blanditiis in facilis! Odit recusandae velit iste amet.
+                        </li>
+                        <li>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima temporibus placeat
+                            blanditiis in facilis! Odit recusandae velit iste amet.
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="modal-footer modal__footer--bg">
+                    <button type="button" class="btn btn-warning" data-bs-dismiss="modal">
+                        Cerrar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- AUTO RENTING HCA modal-->
+    <div class="modal fade" id="autorenting" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-scrollable">
+            <div class="modal-content modal__content--border">
+                <div class="modal-header modal__header--bg text-white">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Lorem ipsum dolor sit amet.</h1>
+                </div>
+                <div class="modal-body modal__body--bg">
+                    <h6 class="d-block fw-bold">Funcionalidad:</h6>
+                    <br>
+
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam nostrum tempore quas
+                        voluptas illo nulla laborum modi, corrupti dolorem. Nihil deserunt alias nisi officia amet
+                        tenetur vel, odio obcaecati rerum!
+                    </p>
+
+                    <div class="custom__carousel rounded-4">
+                        <div id="carouselExampleFade" class="carousel slide carousel-fade w-100 h-100">
+                            <div class="carousel-inner h-100">
+                                <div class="carousel-item active h-100">
+                                    <img src="./img/ar1.jpeg" class="d-block h-100 m-auto" alt="interfaz de log in">
+                                </div>
+                                <div class="carousel-item h-100">
+                                    <img src="./img/ar2.jpeg" class="d-block h-100 m-auto " alt="interfaz de registro">
+                                </div>
+                                <div class="carousel-item h-100">
+                                    <img src="./img/ar3.jpeg" class="d-block h-100 m-auto" alt="interfaz de inicio">
+                                </div>
+                                <div class="carousel-item h-100">
+                                    <img src="./img/ar4.jpeg" class="d-block h-100 m-auto" alt="barra de anvegación">
+                                </div>
+                                <div class="carousel-item h-100">
+                                    <img src="./img/ar5.jpeg" class="d-block h-100 m-auto"
+                                        alt="interfaz de selección dde vehiculo">
+                                </div>
+                                <div class="carousel-item h-100">
+                                    <img src="./img/ar6.jpeg" class="d-block h-100 m-auto"
+                                        alt="interfaz de alquiler de vehiculo">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <a class="btn btn-warning my-3" href="#" target="_blank" rel='noopener noreferrer'>
+                        Visitar repositorio
+                    </a>
+
+                    <br>
+                    <span class="d-block fw-bold">Tecnologías utilizadas:</span>
+                    <ul>
+                        <li>Tecnología</li>
+                        <li>Tecnología</li>
+                        <li>Tecnología</li>
+                        <li>Tecnología</li>
+                        <li>Tecnología</li>
+                        <li>Tecnología</li>
+                    </ul>
+
+                    <br>
+                    <span class="d-block fw-bold">Tareas realizadas:</span>
+                    <br>
+                    <ul>
+                        <li>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        </li>
+                        <li>
+                            Lorem ipsum dolor, sit amet consectetur.
+                        </li>
+                        <li>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        </li>
+                        <li>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        </li>
+                        <li>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        </li>
+                        <li>
+                            Lorem ipsum dolor, sit amet.
+                        </li>
+                        <li>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing.
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer modal__footer--bg">
+                    <button type="button" class="btn btn-warning" data-bs-dismiss="modal">
+                        Cerrar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- EN CASO DE QUERE AGREGAR OTRA EXPERIENCIA -->
+    <!-- <div class="modal fade" id="idexperiencia" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-scrollable">
+            <div class="modal-content modal__content--border">
+                <div class="modal-header modal__header--bg text-white">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Lorem ipsum dolor sit amet.</h1>
+                </div>
+                <div class="modal-body modal__body--bg">
+
+                    <span>CONTENIDO AQUÍ</span>
+
+                </div>
+                <div class="modal-footer modal__footer--bg">
+                    <button type="button" class="btn btn-warning" data-bs-dismiss="modal">
+                        Cerrar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
+    <!-- mis scripts -->
+    <script defer src="js/index.js"></script>
+</body>
+
+</html>

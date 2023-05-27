@@ -1,0 +1,241 @@
+/* fuentes */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+/* variables */
+:root {
+    ---navColor: #1f1f1f;
+    ---navColorModal: #303030;
+    --bgBody: linear-gradient(#1d303a, #24253e);
+    --sectionGradient: linear-gradient(to top, #2e2e2e, #1f1f1f);
+}
+
+/*Estilos generales y reutilizables*/
+html {
+    box-sizing: border-box;
+    animation-fill-mode: forwards;
+    scroll-padding: 55px;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background: var(--bgBody);
+}
+
+.w--opacity {
+    opacity: 0;
+}
+
+.wellcome--opacity {
+    animation-name: bodyOpacity;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+ul li {
+    list-style-type: square;
+}
+
+.contenedor__principal {
+    width: 75%;
+}
+
+.modal__content--border {
+    border: 1px solid rgb(81, 81, 81);
+    border-radius: 15px;
+}
+
+.modal__body--bg > p {
+    text-align: justify;
+}
+
+.modal__body--bg {
+    background-color: #f1f1f1;
+}
+
+.article__experiencia {
+    background: #23343d33;
+    border-radius: 5px;
+    border: 1px solid #2e4e5ed8;
+}
+
+.modal__header--bg,
+.modal__footer--bg {
+    background-color: var(---navColorModal);
+}
+
+/* Estilos */
+
+nav {
+    top: 0;
+    background-color: var(---navColor);
+    z-index: 100;
+}
+
+.nav_icon .nav_enlace_icon {
+    cursor: pointer;
+}
+
+.section {
+    height: calc(100vh - 55px);
+    margin-top: 55px;
+    background: var(--sectionGradient);
+}
+
+.section .section__flex {
+    height: 100%;
+}
+
+.acercade .contacto,
+.habilidades .proyectos {
+    width: max-content;
+}
+
+.habilidades {
+    background: var(--sectionGradient);
+}
+
+.article__experiencia {
+    position: relative;
+}
+
+.article__experiencia > span,
+.article__experiencia > button,
+.article__experiencia .spinner {
+    position: absolute;
+    display: none;
+}
+
+.article__experiencia > span {
+    position: absolute;
+    top: 10%;
+    right: 50%;
+    transform: translateX(50%);
+    text-shadow: 1px 1px 1px black;
+    font-size: 20px;
+}
+
+.article__experiencia > button {
+    position: absolute;
+    bottom: 10%;
+    right: 50%;
+    transform: translateX(50%);
+}
+.article__experiencia .spinner {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+.article__experiencia:hover > span,
+.article__experiencia:hover > button,
+.article__experiencia .spinner {
+    display: block;
+    text-align: center;
+}
+
+.article__experiencia:hover .imagen_referencia > img {
+    opacity: 0.4;
+    transition: opacity 0.25s;
+}
+
+.custom__carousel {
+    height: 450px;
+    background-color: var(---navColorModal);
+}
+
+.footer {
+    background-color: var(---navColor);
+}
+
+/* spinner (touch) */
+.spinner {
+    width: 50px;
+    height: 50px;
+}
+
+.double-bounce1,
+.double-bounce2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #ffffff;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    -webkit-animation: sk-bounce 2s infinite ease-in-out;
+    animation: sk-bounce 2s infinite ease-in-out;
+}
+
+.double-bounce2 {
+    -webkit-animation-delay: -1s;
+    animation-delay: -1s;
+}
+
+/* clases aplicadas desde java script */
+.opacityElement {
+    transition: opacity 2.3s;
+}
+
+/* media querys */
+@media screen and (max-width: 991.98px) {
+    .contenedor__principal {
+        width: 100%;
+    }
+
+    .nav__enlaces {
+        position: fixed;
+        width: 60%;
+        height: 100vh;
+        background-color: var(---navColor);
+        top: 57px;
+        left: 100%;
+        transition: left 0.3s;
+    }
+
+    .nav__enlaces__visible {
+        left: calc(100% - 60%);
+        transition: left right 2s;
+    }
+
+    .nav__enlaces .nav__enlace {
+        width: max-content;
+        margin: 20px 50px;
+    }
+
+    .nav__enlaces .nav__enlace:first-child {
+        margin-top: 50px;
+    }
+}
+
+/* animaciones */
+/* efecto de opacidad al iniciar la pagina */
+@keyframes bodyOpacity {
+    to {
+        opacity: 1;
+    }
+}
+
+/* animacion del spinner */
+@-webkit-keyframes sk-bounce {
+    0%,
+    100% {
+        -webkit-transform: scale(0);
+    }
+    50% {
+        -webkit-transform: scale(1);
+    }
+}
+
+@keyframes sk-bounce {
+    0%,
+    100% {
+        transform: scale(0);
+        -webkit-transform: scale(0);
+    }
+    50% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+    }
+}
