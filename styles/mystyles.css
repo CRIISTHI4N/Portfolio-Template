@@ -189,7 +189,7 @@ nav {
         width: 60%;
         height: 100vh;
         background-color: var(---navColor);
-        top: 57px;
+        top: 55px;
         left: 100%;
         transition: left 0.3s;
     }
